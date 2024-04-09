@@ -1,0 +1,28 @@
+.cardComponent{
+    width: fit-content;
+    margin-left: 1em;
+}
+.card{
+    border-radius:12px;
+    /* margin-left: 1em; */
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: fit-content;
+    overflow: hidden;
+    height: 15em;
+}
+.follow{
+    background-color: black;
+    /* width: fit-content; */
+    border-radius: 10px;
+    color: white;
+    padding: 1% 4% 1% 4%;
+}
+.followDiv{
+    padding: 5px;
+    background-color: white;
+}
+.title{
+    color: white;
+}

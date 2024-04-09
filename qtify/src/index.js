@@ -4,6 +4,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import HomePage from "./Pages/HomePage/homepage";
+import AlbumPage from "./Pages/AlbumPage/albumPage";
 
 const router = createBrowserRouter([
   {
@@ -12,7 +14,10 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <App />
+        element: <HomePage />
+      },{
+        path: "/album/:albumId",
+        element: <AlbumPage />
       }
     ]
   }
