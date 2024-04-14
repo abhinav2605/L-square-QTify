@@ -7,8 +7,14 @@ import Carousel from "../../components/Carousel/carousel";
 function HomePage({ topAlbums, newAlbums, songs }) {
     
   const [state, setState] = useState(true);
+  const [state1, setState1] = useState(true);
+
   function stateChange() {
     setState(!state);
+    
+  }
+  function stateChange1() {
+    setState1(!state1);
     
   }
   return (
@@ -24,11 +30,11 @@ function HomePage({ topAlbums, newAlbums, songs }) {
 
       <div className={styles.heading}>
         <h2>New albums</h2>
-        <button onClick={stateChange} href="#">
-          {state ? "Collapse All":"Show All"}
+        <button onClick={stateChange1} href="#">
+          {state1 ? "Collapse All":"Show All"}
         </button>
       </div>
-      {state ? <Carousel data={newAlbums} /> : <></>}
+      {state1 ? <Carousel data={newAlbums} /> : <></>}
     </>
   );
 }
