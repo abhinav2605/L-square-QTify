@@ -29,7 +29,7 @@ const {topAlbums=[], newAlbums=[], songs=[]} = data;
   return (
     <div>
       <Navbar />
-      <Hero />
+      {/* <Hero /> */}
       {/* <Outlet context = {{data : {topAlbums, newAlbums, songs}}} /> */}
       <HomePage topAlbums={topAlbums} newAlbums={newAlbums} songs={songs} />
     </div>
