@@ -35,6 +35,12 @@ function HomePage({ topAlbums, newAlbums, songs }) {
         </button>
       </div>
       {state1 ? <Carousel data={newAlbums} /> : <></>}
+
+      <div className={styles.heading}>
+        <h2>New Songs</h2>
+        
+      </div>
+      <Carousel data={songs} />
     </>
   );
 }

@@ -16,7 +16,7 @@ function Carousel({ data }) {
         initialSlide={0}
       >
         {data.map((ele) => (
-          <SwiperSlide><Card image={ele.image} follow={ele.follows} title={ele.title} /></SwiperSlide>
+          <SwiperSlide className={styles.swiper}><Card image={ele.image} follow={ele.follows} title={ele.title} /></SwiperSlide>
         ))}
       </Swiper>
     </div>
