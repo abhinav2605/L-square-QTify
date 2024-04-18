@@ -1,4 +1,4 @@
-import navbarStyles from "../Navbar/navbar2.module.css";
+import navbarStyles from "./button.module.css";
 
 const Button = ({ text, eventHandler }) => {
   return (

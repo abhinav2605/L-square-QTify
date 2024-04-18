@@ -1,0 +1,32 @@
+.feedback {
+    border: none;
+    height: 45px;
+    border-radius: 12px;
+    padding: 10px 16px;
+    background-color: var(--black-color);
+    color: var(--primary-color);
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+
+/* Responsive for Mobile or Tab Screens */
+
+@media (max-width: 600px) {
+    .nav {
+        padding: 0 15px;
+    }
+    .img {
+        width: 60px;
+        height: 30px;
+    }
+    .searchField input {
+        padding: 5px;
+    }
+    .feedback {
+        width: 100px;
+        padding: 5px;
+        font-size: 10px;
+    }
+}
