@@ -1,38 +1,25 @@
-import Navbar from './components/navbar/navbar';
-import Hero from './components/Hero Section/hero';
-import './App.css';
-import { useEffect, useState } from 'react';
-import {fetchTopAlbums, fetchNewAlbums, fetchSongs} from "./api/api";
-import HomePage from './Pages/HomePage/homepage';
-// import Outlet from 'react';
+import "./App.css";
+import AlbumSongsPage from "./components/Album Songs Page/AlbumSongsPage";
+import HomePage from "./components/Home Page/HomePage";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
 
-  const [data, setData] = useState({});
-
-function generateData(key, source){
-  source().then((data)=>{
-    setData((prevState) => {
-      return { ...prevState, [key]:data}
-    })
-  })
-}
-
-  useEffect(()=>{
-    generateData("topAlbums",fetchTopAlbums);
-    generateData("newAlbums",fetchNewAlbums);
-    generateData("songs",fetchSongs);
-  }, []);
-
-const {topAlbums=[], newAlbums=[], songs=[]} = data;
 
   return (
-    <div>
-      <Navbar />
-      {/* <Hero /> */}
-      {/* <Outlet context = {{data : {topAlbums, newAlbums, songs}}} /> */}
-      <HomePage topAlbums={topAlbums} newAlbums={newAlbums} songs={songs} />
-    </div>
+    // <div>
+    //   <Navbar />
+    //   {/* <Hero /> */}
+    //   {/* <Outlet context = {{data : {topAlbums, newAlbums, songs}}} /> */}
+    //   <HomePage />
+    // </div>
+    <>
+      <Routes>
+        {" "}
+        <Route path="/" Component={HomePage} />{" "}
+        <Route path="/album/:title" Component={AlbumSongsPage} />{" "}
+      </Routes>{" "}
+    </>
   );
 }
 
