@@ -1,6 +1,6 @@
 import Logo from "../Logo/Logo1";
 import Search from "../Search/Search1";
-import Button from "../Button/Button";
+import Button from "../Button/Button1";
 import { useEffect, useState } from "react";
 import Feedback from "../Feedback/Feedback";
 import styles from "./navbar.module.css";
