@@ -1,4 +1,4 @@
-import Logo from "../Logo/Logo";
+import Logo from "../Logo/Logo1";
 import Search from "../Search/Search";
 import Button from "../Button/Button";
 import { useEffect, useState } from "react";
