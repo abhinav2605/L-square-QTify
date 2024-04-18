@@ -1,7 +1,7 @@
 import React from "react";
 import sectionStyles from "../Section/section.module.css";
 import Hero from "../Hero/Hero";
-// import Navbar from "../Navbar/Navbar";
+import Navbar from "../Navbar1/Navbar";
 import Section from "../Section/Section";
 import { useState, useEffect } from "react";
 import {
@@ -37,7 +37,7 @@ function HomePage() {
 
   return (
     <>
-      {/* <Navbar data={topAlbum.concat(newAlbum)} page={"home"} /> */}
+      <Navbar data={topAlbum.concat(newAlbum)} page={"home"} />
       <Hero />
       <div className={sectionStyles.sectionWrapper}>
         <Section title="Top Albums" data={topAlbum} type="album" />
