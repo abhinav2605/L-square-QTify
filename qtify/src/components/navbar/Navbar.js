@@ -3,7 +3,7 @@ import Search from "../Search/Search1";
 import Button from "../Button/Button1";
 import { useEffect, useState } from "react";
 import Feedback from "../Feedback/Feedback";
-import styles from "./navbar.module.css";
+import styles from "./navbar2.module.css";
 
 const Navbar = ({ data, page, songsData }) => {
   const [isFeedbackClicked, setIsFeedbackClicked] = useState(false);
