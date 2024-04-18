@@ -4,7 +4,7 @@ import "./material.css";
 import { useState } from "react";
 import Card from "../Card/Card1";
 import { Box, CircularProgress, Tabs, Tab } from "@mui/material";
-import Carousel from "../Carousel/Carousel";
+import Carousel from "../Carousel/Carousel1";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 
 const Section = ({ title, data, type, genres }) => {
