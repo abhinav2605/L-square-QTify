@@ -2,7 +2,7 @@ import * as React from "react";
 import styles from "../Section/section.module.css";
 import "./material.css";
 import { useState } from "react";
-import Card from "../Card/Card";
+import Card from "../Card/Card1";
 import { Box, CircularProgress, Tabs, Tab } from "@mui/material";
 import Carousel from "../Carousel/Carousel";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
