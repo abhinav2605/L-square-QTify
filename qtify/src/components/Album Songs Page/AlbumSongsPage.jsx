@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { useLocation, useParams } from "react-router-dom";
 import { fetchTopAlbum, fetchNewAlbum } from "../../api/api";
-import Navbar from "../Navbar/Navbar1";
+import Navbar from "../Navbar/Navbar";
 import SongsHero from "../Songs Page Hero/SongsHero";
 import SongsTable from "../Table/Table";
 const AlbumSongsPage = () => {
